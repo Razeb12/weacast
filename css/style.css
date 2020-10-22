@@ -278,3 +278,42 @@ body {
        min-width: 500px;
    }
 }
+@media only screen and (min-width: 320px){
+  .card-bottom p {
+      font-size: 1.6em;
+      font-weight: 100;
+      letter-spacing: -2px;
+  }
+  .temp span {
+      font-weight: 100;
+      font-size: 2.3em;
+      letter-spacing: -5px;
+      white-space: nowrap;
+  }
+  .condition {
+      font-weight: 700;
+      font-size: .8em;
+      text-transform: capitalize;
+  }
+}
+@media only screen and (min-width: 280px){
+  .card-bottom p {
+      font-size: 1.3em;
+  
+      
+  }
+  .temp span {
+      font-weight: 100;
+      font-size: 2.1em;
+      letter-spacing: -5px;
+      white-space: nowrap;
+  }
+  .condition {
+      font-weight: 700;
+      font-size: .7em;
+      text-transform: capitalize;
+  }
+  .card-bottom span {
+      font-size: 10px;
+  }
+}
