@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>WeaCast App</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/cloud_120_246264_63J_icon.ico" type="image/x-icon">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+  <h1 class=" text-center title1 my-5">WeaCast</h1>
+    <div class="planet planetEarth">
+        <div class="loader"><span></span></div>
+        <div class="earth"></div>
+      </div>
+    </div>
+  </div>
+   
+  <div class="row">
+    <div class="col-md-12">
+       <div class="container my-2">
+      
+         <h4 class="text-center title">Search any Locations</h4>
+         
+         <form class="search-loaction">
+           <input type="text" name="city" placeholder="What city?" autocomplete="off"
+             class="form-control text-muted form-rounded p-4 shadow-sm vibrate-1" />
+         </form>
+
+         <div class="card rounded my-3 shadow-lg d-none back-card">
+           <div class="card-top text-center ">
+             <div class="city-name alias my-3">
+               <p>Abuja</p>
+               <span>...</span>
+             </div>
+             <img src="img/night_image.svg" alt="" class="card-img-top time" />
+           </div>
+
+           <div class="card-body">
+             <div class="card-mid row">
+               <div class="col-8 text-center temp">
+                 <span>30&deg;C</span>
+               </div>
+               <div class="col-4 condition-temp">
+                 <p class="condition">Thunder Storm</p>
+                 <p class="high">30&deg;C</p>
+                 <p class="low">27&deg;C</p>
+               </div>
+             </div>
+
+             <div class="icon-container card shadow mx-auto">
+               <img src="img/cloud.svg" alt="" />
+             </div>
+             <div class="card-bottom px-5 py-4 row">
+               <div class="col text-center">
+                 <p>30&deg;C</p>
+                 <span>Feels Like</span>
+               </div>
+               <div class="col text-center">
+                 <p>55%</p>
+                 <span>Humidity</span>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+    </div>
+  </div>
+ 
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script src="js/index.js"></script>
+  <script src="js/request.js"></script>
+
+
+</body>
+
+</html>

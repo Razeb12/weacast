@@ -1,0 +1,280 @@
+
+
+body {
+    background: #0E2A47;
+    color: black;
+    margin: 0;
+    font-family: consolas;
+    padding: 0;
+}
+
+
+.vibrate-1 {
+    -webkit-animation: vibrate-1 0.3s linear 5 both;
+    animation: vibrate-1 0.3s linear 5 both;
+}
+@-webkit-keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
+@keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+.title {
+    font-weight: 700;
+    color: white !important;
+}
+.title1{
+    font-weight: 700;
+    color: white;
+ 
+}
+.form-rounded {
+    border-radius: 2em;
+}
+
+.back-card {
+    border-radius: 40px !important;
+}
+
+.city-name {
+    position: absolute;
+    width: 100%;
+}
+
+.city-name p {
+    font-size: 16pt;
+    font-weight: 400;
+}
+.alias {
+    color: black !important;
+    font-size: 2rem !important;
+}
+.city-name span {
+    font-weight: 400;
+    font-size: 36pt;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: -60px;
+}
+
+.temp span {
+    font-weight: 100;
+    font-size: 5em;
+    letter-spacing: -5px;
+    white-space: nowrap;
+}
+
+.card-mid {
+    line-height: 0.5;
+}
+
+.condition {
+    line-height: 1em;
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: capitalize;
+}
+
+.high::before {
+    content: '';
+    background: url('img/up.svg') no-repeat;
+    width: 10px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+.low::before {
+    content: '';
+    background: url('img/down.svg') no-repeat;
+    width: 10px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+.icon-container {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background: #202020;
+}
+
+.icon-container img {
+    margin: auto;
+}
+
+.card-bottom {
+    line-height: 0.5;
+}
+
+.card-bottom span {
+    font-size: 12px;
+}
+
+.card-bottom p {
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: -2px;
+}
+.planet {
+    display: flex;
+    flex-direction: column;
+}
+
+.planetEarth {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.planetEarth .loader {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.planetEarth .loader::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to top, transparent, rgba(0,225,249,0.4));
+    background-size: 200px 360px;
+    background-repeat: no-repeat;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+.planetEarth .loader::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #00fff9;
+    border-radius: 50%;
+    z-index: 10;
+    box-shadow:  0 0 10px #00fff9,
+                 0 0 20px #00fff9,
+                 0 0 30px #00fff9,
+                 0 0 40px #00fff9,
+                 0 0 50px #00fff9,
+                 0 0 60px #00fff9,
+                 0 0 70px #00fff9,
+                 0 0 80px #00fff9,
+                 0 0 90px #00fff9,
+                 0 0 100px #00fff9,
+}
+
+.planetEarth .loader span {
+    position: absolute;
+    top:10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #182357;
+    border-radius: 50%;
+}
+.earth {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: url(/img/earth.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: inset 0 0 20px #03a9f4,
+                      0 0 120px #03a9f4;
+                      animation: animateEarth 20s linear infinite;
+}
+@keyframes  animateEarth{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 162.5%;
+    }
+
+}
+@media only screen and (min-width: 1980px){
+   .container {
+       max-width: 500px;
+       min-width: 500px;
+   }
+}
+@media only screen and (min-width: 768px){
+   .container {
+       max-width: 500px;
+       min-width: 500px;
+   }
+}
